@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a first year M.Phil. student in Computer Science at The Chinese University of Hong Kong, Shenzhen(香港中文大学深圳数据科学学院), advised by Prof. Kui Jia（贾奎）. Prior to that, I graduated from College of Control Science, Zhejiang University (浙江大学控制科学与工程学院) with a bachelor’s degree in Robotics Engineering.
+I am currently a first year M.Phil. student in Computer Science at The Chinese University of Hong Kong, Shenzhen(香港中文大学深圳数据科学学院), advised by [Prof. Kui Jia(贾奎)](http://kuijia.site/). Prior to that, I graduated from College of Control Science, Zhejiang University (浙江大学控制科学与工程学院) with a bachelor’s degree in Robotics Engineering, advised by [Prof. Yong Liu(刘勇)](https://scholar.google.com/citations?hl=En&user=qYcgBbEAAAAJ&view_op=list_works).
 
 Research interests:
 - Robotics (Manipulation, VLA)
@@ -47,7 +47,7 @@ Ruixiang Wang*, Huayi Zhou*, **Xinyue Yao**, Guiliang Liu, Kui Jia
 - 
 
 # 📖 Educations
-- *2025.09 - 2027.06 (expected)*, <a href="https://sds.cuhk.edu.cn/en"><img class="svg" src="/images/CUHK_logo.svg" width="20pt"></a> Master of Philosophy(M.Phil.), School of Data Science, The Chinese University of Hong Kong, Shenzhen. 
+- *2025.09 - 2027.06 (expected)*, <a href="https://sds.cuhk.edu.cn/en"><img class="svg" src="/images/cuhk_logo.svg" width="20pt"></a> Master of Philosophy(M.Phil.), School of Data Science, The Chinese University of Hong Kong, Shenzhen. 
 - *2021.09 - 2025.06*, <a href="http://www.cse.zju.edu.cn/cseenglish/main.htm"><img class="svg" src="/images/zju_logo.svg" width="20pt"></a> Undergraduate, College of Control Science, Zhejiang University, Hangzhou. 
 
 # 💬 Invited Talks
