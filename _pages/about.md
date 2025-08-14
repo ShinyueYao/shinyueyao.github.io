@@ -24,7 +24,7 @@ I am currently a first year M.Phil. student in Computer Science at The Chinese U
 Research interests:
 - Robotics (Manipulation, VLA)
 - Computer Vision & Computer Graphics (3D Representations, Robot Simulation)
-- Generative Models (3D assets generation & Robot data generation)
+- Generative Models (3D Assets & Robot Data Generation)
 
 
 # 🔥 News
