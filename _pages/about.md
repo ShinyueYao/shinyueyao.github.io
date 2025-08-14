@@ -36,7 +36,7 @@ Research interests:
 
 [GAT-Grasp: Gesture-Driven Affordance Transfer for Task-Aware Robotic Grasping](https://arxiv.org/pdf/2503.06227)
 
-Ruixiang Wang*, Huayi Zhou*, **Xinyue Yao**, Guiliang Liu, Kui Jia
+Ruixiang Wang$^*$, Huayi Zhou$^*$, **Xinyue Yao**, Guiliang Liu, Kui Jia
 
 </div>
 </div>
