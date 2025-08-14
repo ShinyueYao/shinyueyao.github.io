@@ -44,16 +44,10 @@ Ruixiang Wang *, Huayi Zhou *, **Xinyue Yao**, Guiliang Liu, Kui Jia
 </div>
 
 
-
-# 🎖 Honors and Awards
-- 
-
 # 📖 Educations
 - <a href="https://sds.cuhk.edu.cn/en"><img class="svg" src="/images/cuhk_logo.svg" width="20pt"></a> *2025.09 - 2027.06 (expected)*, Master of Philosophy, School of Data Science, The Chinese University of Hong Kong, Shenzhen. 
 - <a href="http://www.cse.zju.edu.cn/cseenglish/main.htm"><img class="svg" src="/images/zju_logo.svg" width="20pt"></a> *2021.09 - 2025.06*, Undergraduate, College of Control Science, Zhejiang University, Hangzhou. 
 
-# 💬 Invited Talks
-- 
 
 # 💻 Internships
-- 
+- Dexforce
