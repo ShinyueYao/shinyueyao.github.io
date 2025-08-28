@@ -22,13 +22,14 @@ redirect_from:
 I am currently a first year M.Phil. student in Computer Science at The Chinese University of Hong Kong, Shenzhen(香港中文大学深圳数据科学学院), advised by [Prof. Kui Jia(贾奎)](http://kuijia.site/). Prior to that, I graduated from College of Control Science, Zhejiang University (浙江大学控制科学与工程学院) with a bachelor’s degree in Robotics Engineering, advised by [Prof. Yong Liu(刘勇)](https://scholar.google.com/citations?hl=En&user=qYcgBbEAAAAJ&view_op=list_works).
 
 Research interests:
-- Robotics (Manipulation, VLA)
-- Computer Vision & Computer Graphics (3D Representations, Robot Simulation)
-- Generative Models (3D Assets & Robot Data Generation)
+- **Robot Learning**
+- **3D Representations**
+- **Generative Models**
 
 
 # 🔥 News
-- *2025.06*: &nbsp;🎉🎉 Graduated from College of Control Science, Zhejiang University. 
+- *2025.06*: &nbsp;🎉🎉 Graduated from College of Control Science, Zhejiang University.
+- *2025.06*: &nbsp;🎉🎉 Our work [**GAT-Grasp**](https://arxiv.org/pdf/2503.06227) for Gesture-Driven and Affordance-based Task-Aware Robotic Grasping is accepted by **IROS2025**
 - *2024.11*: &nbsp;🎉🎉 I decide to pursue my master degree in Computer Science at School of Data Science, The Chinese University of Hong Kong, Shenzhen. Very fortunated to be advised by Prof. Kui Jia. 
 
 # 📝 Publications 
