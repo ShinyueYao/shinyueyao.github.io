@@ -49,4 +49,7 @@ Ruixiang Wang *, Huayi Zhou *, **Xinyue Yao**, Guiliang Liu, Kui Jia
 
 
 # 💻 Internships
-- Dexforce
+-
+
+# 🧑‍🏫 Teaching
+-
