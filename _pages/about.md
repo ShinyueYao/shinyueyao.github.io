@@ -30,8 +30,7 @@ Research interests:
 # 🔥 News
 - *2025.06*: &nbsp;🎉🎉 Graduated from College of Control Science, Zhejiang University.
 - *2025.06*: &nbsp;🎉🎉 Our work [**GAT-Grasp**](https://arxiv.org/pdf/2503.06227) for Gesture-Driven and Affordance-based Task-Aware Robotic Grasping is accepted by **IROS2025**
-- *2024.11*: &nbsp;🎉🎉 I decide to pursue my master degree in Computer Science at School of Data Science, The Chinese University of Hong Kong, Shenzhen. Very fortunated to be advised by Prof. Kui Jia. 
-
+  
 # 📝 Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IROS 2025</div><img src='images/IROS2025.svg' alt="sym" width="100%"></div></div>
