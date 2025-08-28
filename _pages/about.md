@@ -19,12 +19,12 @@ redirect_from:
 
 # 👋 About Me
 
-I am currently a first year M.Phil. student in Computer Science at <a href="https://sds.cuhk.edu.cn/en"><img class="svg" src="/images/cuhk_logo.svg" width="20pt"></a> The Chinese University of Hong Kong, Shenzhen, advised by [Prof. Kui Jia(贾奎)](http://kuijia.site/). Prior to that, I graduated from College of Control Science, <a href="http://www.cse.zju.edu.cn/cseenglish/main.htm"><img class="svg" src="/images/zju_logo.svg" width="20pt"></a> Zhejiang University with a bachelor’s degree in Robotics Engineering, advised by [Prof. Yong Liu(刘勇)](https://scholar.google.com/citations?hl=En&user=qYcgBbEAAAAJ&view_op=list_works).
+I am currently a first year M.Phil. student in Computer Science at <a href="https://sds.cuhk.edu.cn/en"><img class="svg" src="/images/cuhk_logo.svg" width="20pt"></a> The Chinese University of Hong Kong, Shenzhen, advised by [Prof. Kui Jia(贾奎)](http://kuijia.site/). Prior to that, I graduated from <a href="http://www.cse.zju.edu.cn/cseenglish/main.htm"><img class="svg" src="/images/zju_logo.svg" width="20pt"></a> Zhejiang University with a bachelor’s degree in Robotics Engineering, advised by [Prof. Yong Liu(刘勇)](https://scholar.google.com/citations?hl=En&user=qYcgBbEAAAAJ&view_op=list_works).
 
-Research interests:
+**Research interests:**
 - *Robot Learning*
-- *3D Representations*
 - *Generative Models*
+- *3D Representations*
 
 # 🔥 News
 - *2025.06*: &nbsp;🎉🎉 Graduated from College of Control Science, Zhejiang University.
