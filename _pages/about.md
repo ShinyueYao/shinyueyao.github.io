@@ -38,6 +38,7 @@ I am currently a first year M.Phil. student in Computer Science at <a href="http
 [GAT-Grasp: Gesture-Driven Affordance Transfer for Task-Aware Robotic Grasping](https://arxiv.org/pdf/2503.06227)
 
 Ruixiang Wang *, Huayi Zhou *, **Xinyue Yao**, Guiliang Liu, Kui Jia
+
 **TLDR:** GAT-Grasp is introduced, a gesture-driven grasping framework that directly utilizes human hand gestures to guide the generation of task-specific grasp poses with appropriate positioning and orientation, and enables zero-shot generalization to novel objects and cluttered environments.
 </div>
 </div>
