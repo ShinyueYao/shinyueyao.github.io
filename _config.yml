@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Xinyue YAO"
   avatar           : "images/photo.jpg"
-  bio              : "Focusing on Robotics and 3D Representations"
+  bio              : "Robot Learning & Generation"
   location         : "Shenzhen, China"
   employer         :
   pubmed           : 
