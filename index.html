@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Xinyue Yao - M.Phil. student in Computer Science at The Chinese University of Hong Kong, Shenzhen."
+    />
+    <title>Xinyue Yao</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="wordmark" href="#top" aria-label="Xinyue Yao home">XY</a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#top">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#news">News</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#publications">Publications</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-button theme-toggle" type="button" aria-label="Switch color theme" data-tooltip="Switch color theme">
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+          <button class="icon-button menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-tooltip="Open navigation">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#top">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#news">News</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="page-title">
+        <canvas id="field-canvas" aria-hidden="true"></canvas>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Academic homepage</p>
+            <h1 id="page-title">Xinyue<br />Yao</h1>
+            <div class="hero-links">
+              <a class="text-link" href="CV.pdf" target="_blank" rel="noreferrer">
+                CV <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+              <a class="text-link primary-link" href="https://scholar.google.com/citations?user=ZOf_esUAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">
+                Google Scholar <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+              <a class="text-link" href="https://github.com/ShinyueYao" target="_blank" rel="noreferrer">
+                GitHub <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+              <a class="text-link" href="mailto:xinyue.yao.cs@gmail.com">
+                Email: xinyue.yao.cs@gmail.com <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="motion-switcher" role="group" aria-label="Background motion style">
+          <button class="motion-button" type="button" data-motion="network" aria-label="Use network motion" aria-pressed="false" data-tooltip="Network motion">
+            <i data-lucide="network" aria-hidden="true"></i>
+          </button>
+          <button class="motion-button is-active" type="button" data-motion="trajectory" aria-label="Use trajectory motion" aria-pressed="true" data-tooltip="Trajectory">
+            <i data-lucide="route" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="bio section" id="about" aria-labelledby="about-title">
+        <div class="container bio-grid">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Biography</p>
+            <h2 id="about-title">About Me</h2>
+          </div>
+          <div class="bio-content reveal" data-reveal-delay="90">
+            <p class="bio-statement">I am a second-year M.Phil. student in Computer Science at <strong>The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)</strong>, supervised by Prof. <a href="http://kuijia.site/" target="_blank" rel="noreferrer">Kui Jia</a>. I received my B.E. in <strong>Robotics Engineering</strong> from <strong>Zhejiang University</strong> (2021 - 2025), under the <strong>Chu Kochen Honors College</strong> and the <strong>College of Control Science and Engineering</strong>. During my undergraduate studies, I worked as a research intern at <a href="https://april.zju.edu.cn/" target="_blank" rel="noreferrer">APRIL Lab</a>.</p>
+            <p class="bio-statement research-statement">My research interests lie in enabling embodied agents to perceive, reason about and interact with the physical world. I am also interested in the data generation pipelines, computer graphics, and generative modeling techniques needed to train such agents.</p>
+            <div class="research-interests">
+              <h3>Research Interests</h3>
+              <ul>
+                <li>Embodied Intelligence</li>
+                <li>Generative Model</li>
+                <li>Computer Graphics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news section" id="news" aria-labelledby="news-title">
+        <div class="container news-grid">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Updates</p>
+            <h2 id="news-title">News</h2>
+          </div>
+          <ol class="news-list reveal" data-reveal-delay="90">
+            <li>
+              <time datetime="2026">2026</time>
+              <p><a href="#publications">PAct: Part-Decomposed Single-View Articulated Object Generation</a> was accepted to ACM SIGGRAPH Asia 2026.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="record-section section" id="experience" aria-labelledby="experience-title">
+        <div class="container record-grid">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Research Experience</p>
+            <h2 id="experience-title">Experience</h2>
+          </div>
+          <ol class="experience-list reveal" data-reveal-delay="90">
+            <li>
+              <p class="experience-period">2025.08 - Present</p>
+              <div>
+                <h3>The Chinese University of Hong Kong, Shenzhen</h3>
+                <p>M.Phil. Student</p>
+              </div>
+            </li>
+            <li>
+              <p class="experience-period">2024.09 - 2025.06</p>
+              <div>
+                <h3>The Chinese University of Hong Kong, Shenzhen</h3>
+                <p>Research Intern</p>
+              </div>
+            </li>
+            <li>
+              <p class="experience-period">2024.03 - 2024.08</p>
+              <div>
+                <h3>APRIL Lab, Zhejiang University</h3>
+                <p>Research Intern</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="record-section section" id="education" aria-labelledby="education-title">
+        <div class="container record-grid">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Academic Background</p>
+            <h2 id="education-title">Education</h2>
+          </div>
+          <ol class="education-list reveal" data-reveal-delay="90">
+            <li>
+              <p class="education-period">2025 - 2027</p>
+              <div class="education-entry">
+                <img class="school-mark" src="assets/CUHK.png" alt="The Chinese University of Hong Kong, Shenzhen emblem" width="800" height="800" loading="lazy" />
+                <div>
+                  <h3>M.Phil. in Computer Science</h3>
+                  <p>The Chinese University of Hong Kong, Shenzhen</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="education-period">2021 - 2025</p>
+              <div class="education-entry">
+                <img class="school-mark" src="assets/zju.png" alt="Zhejiang University emblem" width="1200" height="1200" loading="lazy" />
+                <div>
+                  <h3>B.E. in Robotics Engineering</h3>
+                  <p>Zhejiang University</p>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="publications section" id="publications" aria-labelledby="publications-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selected work</p>
+            <h2 id="publications-title">Publications</h2>
+            <p class="publication-count">02 records</p>
+          </div>
+            <li class="publication reveal" data-reveal-delay="100">
+              <div class="publication-number" aria-hidden="true">02</div>
+              <article class="publication-content">
+                <a class="publication-figure" href="https://arxiv.org/abs/2602.14965" target="_blank" rel="noreferrer">
+                  <img src="assets/pact.png" alt="PAct rendering of articulated furniture objects and robot arms in a simulated scene" width="1380" height="768" loading="lazy" />
+                </a>
+                <div class="publication-details">
+                  <div class="publication-meta">
+                    <span>Conference paper</span>
+                    <span>2026</span>
+                  </div>
+                  <h3>PAct: Part-Decomposed Single-View Articulated Object Generation</h3>
+                  <p class="authors">Q. Liu, <strong>X. Yao</strong>, S. Zhang, Y. Deng, G. Liu, Z. Liu, K. Jia</p>
+                  <p class="venue">ACM SIGGRAPH Asia 2026</p>
+                  <a class="publication-link" href="https://arxiv.org/abs/2602.14965" target="_blank" rel="noreferrer">
+                    Read on arXiv <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+            </li>
+          </ol>
+          
+          <ol class="publication-list">
+            <li class="publication reveal">
+              <div class="publication-number" aria-hidden="true">01</div>
+              <article class="publication-content">
+                <a class="publication-figure" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ZOf_esUAAAAJ&amp;citation_for_view=ZOf_esUAAAAJ:u-x6o8ySG0sC" target="_blank" rel="noreferrer">
+                  <img src="assets/gat-grasp.png" alt="GAT-Grasp method overview showing pointing and grasp gestures for robotic manipulation" width="1600" height="844" loading="lazy" />
+                </a>
+                <div class="publication-details">
+                  <div class="publication-meta">
+                    <span>Conference paper</span>
+                    <span>2025</span>
+                  </div>
+                  <h3>GAT-Grasp: Gesture-Driven Affordance Transfer for Task-Aware Robotic Grasping</h3>
+                  <p class="authors">R. Wang, H. Zhou, <strong>X. Yao</strong>, G. Liu, K. Jia</p>
+                  <p class="venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
+                  <a class="publication-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=ZOf_esUAAAAJ&amp;citation_for_view=ZOf_esUAAAAJ:u-x6o8ySG0sC" target="_blank" rel="noreferrer">
+                    Read on arXiv <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+            </li>
+
+          <div class="all-publications reveal">
+            <a class="text-link primary-link" href="https://scholar.google.com/citations?user=ZOf_esUAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">
+              View all on Google Scholar <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <span>Xinyue Yao</span>
+        <a href="#top" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
