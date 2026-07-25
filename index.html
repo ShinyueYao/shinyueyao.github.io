@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
     <script src="script.js" defer></script>
+    <script type="module" src="face-cloud.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -67,15 +68,10 @@
               </a>
             </div>
           </div>
+          <div class="hero-face reveal" data-reveal-delay="120" aria-hidden="true">
+            <canvas id="face-cloud-canvas"></canvas>
+          </div>
 
-        </div>
-        <div class="motion-switcher" role="group" aria-label="Background motion style">
-          <button class="motion-button" type="button" data-motion="network" aria-label="Use network motion" aria-pressed="false" data-tooltip="Network motion">
-            <i data-lucide="network" aria-hidden="true"></i>
-          </button>
-          <button class="motion-button is-active" type="button" data-motion="trajectory" aria-label="Use trajectory motion" aria-pressed="true" data-tooltip="Trajectory">
-            <i data-lucide="route" aria-hidden="true"></i>
-          </button>
         </div>
       </section>
 
@@ -90,11 +86,61 @@
             <p class="bio-statement research-statement">My research interests lie in enabling embodied agents to perceive, reason about and interact with the physical world. I am also interested in the data generation pipelines, computer graphics, and generative modeling techniques needed to train such agents.</p>
             <div class="research-interests">
               <h3>Research Interests</h3>
-              <ul>
-                <li>Embodied Intelligence</li>
-                <li>Generative Model</li>
-                <li>Computer Graphics</li>
-              </ul>
+              <div class="research-interest-explorer">
+                <ul class="research-interest-list">
+                  <li>
+                    <button class="research-interest-card" type="button" data-interest="embodied" aria-controls="interest-embodied" aria-expanded="false">
+                      <span class="interest-index">01</span>
+                      <span class="interest-name">Embodied<br />Intelligence</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="research-interest-card" type="button" data-interest="generative" aria-controls="interest-generative" aria-expanded="false">
+                      <span class="interest-index">02</span>
+                      <span class="interest-name">Generative<br />Modeling</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="research-interest-card" type="button" data-interest="graphics" aria-controls="interest-graphics" aria-expanded="false">
+                      <span class="interest-index">03</span>
+                      <span class="interest-name">Computer<br />Graphics</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="research-interest-detail" aria-live="polite">
+                  <article class="research-interest-copy" id="interest-embodied" data-detail="embodied">
+                    <p class="interest-detail-kicker">01 / Research Direction</p>
+                    <h4>Embodied Intelligence</h4>
+                    <p>Building agents that can perceive, plan, and act reliably in the physical world.</p>
+                  </article>
+                  <article class="research-interest-copy" id="interest-generative" data-detail="generative">
+                    <p class="interest-detail-kicker">02 / Research Direction</p>
+                    <h4>Generative Modeling</h4>
+                    <p>Developing data and world models that broaden what embodied agents can learn from.</p>
+                  </article>
+                  <article class="research-interest-copy" id="interest-graphics" data-detail="graphics">
+                    <p class="interest-detail-kicker">03 / Research Direction</p>
+                    <h4>Computer Graphics</h4>
+                    <p>Building reliable data generation and generative simulation for embodied agents.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="research-flow" aria-label="Research Flow">
+              <ol class="flow-track">
+                <li class="flow-node">
+                  <span class="flow-step">01</span>
+                  <strong>Generative Simulation</strong>
+                </li>
+                <li class="flow-node">
+                  <span class="flow-step">02</span>
+                  <strong>Scalable Data Generation</strong>
+                </li>
+                <li class="flow-node">
+                  <span class="flow-step">03</span>
+                  <strong>World Modeling</strong>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
@@ -123,24 +169,43 @@
           </div>
           <ol class="experience-list reveal" data-reveal-delay="90">
             <li>
+              <p class="experience-period">2026.08 - Present</p>
+              <div class="experience-entry">
+                <img class="organization-mark organization-mark--dexforce" src="assets/Dexforce.png" alt="DexForce logo" width="256" height="256" loading="lazy" />
+                <div>
+                  <h3>DexForce Technology Co., Ltd.</h3>
+                  <p>Embodied AI Research Intern</p>
+                </div>
+              </div>
+            </li>
+            <li>
               <p class="experience-period">2025.08 - Present</p>
-              <div>
-                <h3>The Chinese University of Hong Kong, Shenzhen</h3>
-                <p>M.Phil. Student</p>
+              <div class="experience-entry">
+                <img class="organization-mark" src="assets/CUHK.png" alt="The Chinese University of Hong Kong, Shenzhen emblem" width="800" height="800" loading="lazy" />
+                <div>
+                  <h3>The Chinese University of Hong Kong, Shenzhen</h3>
+                  <p>M.Phil. Student</p>
+                </div>
               </div>
             </li>
             <li>
               <p class="experience-period">2024.09 - 2025.06</p>
-              <div>
-                <h3>The Chinese University of Hong Kong, Shenzhen</h3>
-                <p>Research Intern</p>
+              <div class="experience-entry">
+                <img class="organization-mark" src="assets/CUHK.png" alt="The Chinese University of Hong Kong, Shenzhen emblem" width="800" height="800" loading="lazy" />
+                <div>
+                  <h3>The Chinese University of Hong Kong, Shenzhen</h3>
+                  <p>Research Intern</p>
+                </div>
               </div>
             </li>
             <li>
               <p class="experience-period">2024.03 - 2024.08</p>
-              <div>
-                <h3>APRIL Lab, Zhejiang University</h3>
-                <p>Research Intern</p>
+              <div class="experience-entry">
+                <img class="organization-mark" src="assets/zju.png" alt="Zhejiang University emblem" width="1200" height="1200" loading="lazy" />
+                <div>
+                  <h3>APRIL Lab, Zhejiang University</h3>
+                  <p>Research Intern</p>
+                </div>
               </div>
             </li>
           </ol>
@@ -185,6 +250,7 @@
             <h2 id="publications-title">Publications</h2>
             <p class="publication-count">02 records</p>
           </div>
+          <ol class="publication-list">
             <li class="publication reveal" data-reveal-delay="100">
               <div class="publication-number" aria-hidden="true">02</div>
               <article class="publication-content">
@@ -205,9 +271,6 @@
                 </div>
               </article>
             </li>
-          </ol>
-          
-          <ol class="publication-list">
             <li class="publication reveal">
               <div class="publication-number" aria-hidden="true">01</div>
               <article class="publication-content">
@@ -228,6 +291,7 @@
                 </div>
               </article>
             </li>
+          </ol>
 
           <div class="all-publications reveal">
             <a class="text-link primary-link" href="https://scholar.google.com/citations?user=ZOf_esUAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">

@@ -3,9 +3,7 @@
   const themeButton = document.querySelector('.theme-toggle');
   const menuButton = document.querySelector('.menu-toggle');
   const mobileNav = document.querySelector('.mobile-nav');
-  const motionButtons = document.querySelectorAll('.motion-button');
   const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let motionMode = 'trajectory';
 
   const setThemeIcon = (theme) => {
     if (!themeButton) return;
@@ -48,6 +46,7 @@
     }
 
     drawField();
+    setupResearchInterests();
   });
 
   themeButton?.addEventListener('click', () => {
@@ -71,14 +70,73 @@
     setMenuIcon(false);
   }));
 
-  motionButtons.forEach((button) => button.addEventListener('click', () => {
-    motionMode = button.dataset.motion;
-    motionButtons.forEach((item) => {
-      const isActive = item === button;
-      item.classList.toggle('is-active', isActive);
-      item.setAttribute('aria-pressed', String(isActive));
+  function setupResearchInterests() {
+    const explorer = document.querySelector('.research-interest-explorer');
+    if (!explorer) return;
+
+    const detailPanel = explorer.querySelector('.research-interest-detail');
+    const cards = explorer.querySelectorAll('.research-interest-card');
+    const details = detailPanel?.querySelectorAll('.research-interest-copy');
+    if (!detailPanel || !details) return;
+
+    let activeCard;
+    let hideTimer;
+    document.body.append(detailPanel);
+
+    const positionDetail = () => {
+      if (!activeCard) return;
+      const inset = 16;
+      const gap = 14;
+      const cardBounds = cards[0].getBoundingClientRect();
+      const panelWidth = detailPanel.offsetWidth;
+      const panelHeight = detailPanel.offsetHeight;
+      const left = Math.max(inset, Math.min(cardBounds.left, window.innerWidth - panelWidth - inset));
+      let top = cardBounds.bottom + gap;
+      if (top + panelHeight > window.innerHeight - inset) top = cardBounds.top - panelHeight - gap;
+      if (top < inset) top = inset;
+      detailPanel.style.left = `${left}px`;
+      detailPanel.style.top = `${top}px`;
+    };
+
+    const setActive = (card) => {
+      window.clearTimeout(hideTimer);
+      activeCard = card;
+      const interest = card.dataset.interest;
+      detailPanel.dataset.active = interest;
+      detailPanel.classList.add('is-open');
+      cards.forEach((item) => item.setAttribute('aria-expanded', String(item === card)));
+      details.forEach((detail) => detail.classList.toggle('is-active', detail.dataset.detail === interest));
+      window.requestAnimationFrame(positionDetail);
+    };
+
+    const clearActive = () => {
+      activeCard = undefined;
+      delete detailPanel.dataset.active;
+      detailPanel.classList.remove('is-open');
+      cards.forEach((card) => card.setAttribute('aria-expanded', 'false'));
+      details.forEach((detail) => detail.classList.remove('is-active'));
+    };
+
+    const scheduleClear = () => {
+      window.clearTimeout(hideTimer);
+      hideTimer = window.setTimeout(() => {
+        if (!explorer.matches(':hover') && !detailPanel.matches(':hover') && !explorer.contains(document.activeElement)) clearActive();
+      }, 120);
+    };
+
+    cards.forEach((card) => {
+      card.addEventListener('pointerenter', () => setActive(card));
+      card.addEventListener('pointerleave', scheduleClear);
+      card.addEventListener('focus', () => setActive(card));
+      card.addEventListener('blur', scheduleClear);
+      card.addEventListener('click', () => setActive(card));
     });
-  }));
+
+    detailPanel.addEventListener('pointerenter', () => window.clearTimeout(hideTimer));
+    detailPanel.addEventListener('pointerleave', scheduleClear);
+    window.addEventListener('resize', positionDetail, { passive: true });
+    window.addEventListener('scroll', positionDetail, { passive: true });
+  }
 
   function drawField() {
     const canvas = document.getElementById('field-canvas');
@@ -378,8 +436,7 @@
       if (!running) return;
       context.clearRect(0, 0, width, height);
       const colors = palette();
-      if (motionMode === 'trajectory') drawTrajectory(time, colors);
-      else drawNetwork(colors);
+      drawTrajectory(time, colors);
       frameId = window.requestAnimationFrame(frame);
     };
 
