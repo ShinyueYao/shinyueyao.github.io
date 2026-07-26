@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
     <script src="script.js" defer></script>
-    <script type="module" src="face-cloud.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -21,8 +20,8 @@
         <a class="wordmark" href="#top" aria-label="Xinyue Yao home">XY</a>
         <nav class="desktop-nav" aria-label="Primary navigation">
           <a href="#top">Home</a>
-          <a href="#about">About Me</a>
           <a href="#news">News</a>
+          <a href="#about">About Me</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
           <a href="#publications">Publications</a>
@@ -38,8 +37,8 @@
       </div>
       <nav class="mobile-nav" aria-label="Mobile navigation">
         <a href="#top">Home</a>
-        <a href="#about">About Me</a>
         <a href="#news">News</a>
+        <a href="#about">About Me</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
@@ -50,7 +49,7 @@
       <section class="hero" id="top" aria-labelledby="page-title">
         <canvas id="field-canvas" aria-hidden="true"></canvas>
         <div class="container hero-grid">
-          <div class="hero-copy reveal">
+          <div class="hero-copy reveal is-visible">
             <p class="eyebrow">Academic homepage</p>
             <h1 id="page-title">Xinyue<br />Yao</h1>
             <div class="hero-links">
@@ -68,10 +67,56 @@
               </a>
             </div>
           </div>
-          <div class="hero-face reveal" data-reveal-delay="120" aria-hidden="true">
-            <canvas id="face-cloud-canvas"></canvas>
+          <div class="hero-face reveal is-visible" data-reveal-delay="120">
+            <img src="assets/profile.jpg" alt="Portrait of Xinyue Yao" />
           </div>
 
+        </div>
+      </section>
+
+      <section class="news news-ticker" id="news" aria-labelledby="news-title">
+        <div class="container news-ticker-layout">
+          <div class="news-ticker-intro reveal">
+            <p class="eyebrow">Updates</p>
+            <h2 id="news-title">News</h2>
+          </div>
+          <div class="news-ticker-viewport reveal" data-reveal-delay="90" role="region" aria-label="Latest news">
+            <ol class="news-ticker-track">
+              <li class="news-ticker-item">
+                <time datetime="2026">2026</time>
+                <p><a href="#publications">PAct: Part-Decomposed Single-View Articulated Object Generation accepted to ACM SIGGRAPH Asia 2026.</a></p>
+              </li>
+              <li class="news-ticker-item">
+                <time datetime="2025">2025</time>
+                <p><a href="#publications">GAT-Grasp: Gesture-Driven Affordance Transfer for Task-Aware Robotic Grasping accepted to IROS 2025.</a></p>
+              </li>
+              <li class="news-ticker-item" aria-hidden="true">
+                <time datetime="2026">2026</time>
+                <p><span>PAct: Part-Decomposed Single-View Articulated Object Generation accepted to ACM SIGGRAPH Asia 2026.</span></p>
+              </li>
+              <li class="news-ticker-item" aria-hidden="true">
+                <time datetime="2025">2025</time>
+                <p><span>GAT-Grasp: Gesture-Driven Affordance Transfer for Task-Aware Robotic Grasping accepted to IROS 2025.</span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="research-flow" aria-label="Research Flow">
+            <h3 class="research-flow-title">Research Flow</h3>
+            <ol class="flow-track">
+              <li class="flow-node">
+                <span class="flow-step">01</span>
+                <strong>Generative Simulation</strong>
+              </li>
+              <li class="flow-node">
+                <span class="flow-step">02</span>
+                <strong>Data Generation</strong>
+              </li>
+              <li class="flow-node">
+                <span class="flow-step">03</span>
+                <strong>World Modeling</strong>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
 
@@ -126,38 +171,7 @@
                 </div>
               </div>
             </div>
-            <div class="research-flow" aria-label="Research Flow">
-              <ol class="flow-track">
-                <li class="flow-node">
-                  <span class="flow-step">01</span>
-                  <strong>Generative Simulation</strong>
-                </li>
-                <li class="flow-node">
-                  <span class="flow-step">02</span>
-                  <strong>Data Generation</strong>
-                </li>
-                <li class="flow-node">
-                  <span class="flow-step">03</span>
-                  <strong>World Modeling</strong>
-                </li>
-              </ol>
-            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="news section" id="news" aria-labelledby="news-title">
-        <div class="container news-grid">
-          <div class="section-intro reveal">
-            <p class="eyebrow">Updates</p>
-            <h2 id="news-title">News</h2>
-          </div>
-          <ol class="news-list reveal" data-reveal-delay="90">
-            <li>
-              <time datetime="2026">2026</time>
-              <p><a href="#publications">PAct: Part-Decomposed Single-View Articulated Object Generation</a> was accepted to ACM SIGGRAPH Asia 2026.</p>
-            </li>
-          </ol>
         </div>
       </section>
 
