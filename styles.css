@@ -743,15 +743,16 @@ h2 {
 .publication-venue-tag {
   position: absolute;
   z-index: 1;
-  top: 10px;
-  left: 10px;
-  padding: 5px 7px;
-  border: 1px solid color-mix(in srgb, var(--paper) 70%, transparent);
-  color: var(--paper);
-  background: color-mix(in srgb, var(--ink) 82%, transparent);
-  font-size: 10px;
+  top: 0;
+  left: 0;
+  padding: 7px 9px 6px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--teal);
+  background: var(--surface);
+  font-size: 9px;
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   line-height: 1;
   text-transform: uppercase;
 }
